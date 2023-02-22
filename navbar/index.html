@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- navigation bar here -->
+  <nav>
+    <img class="logo" src="logo.png" alt="">
+
+ <div id="nav-group">
+        <ul id="navigation">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Stories</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>    
+        </ul>
+
+</div>
+
+<div id="sign-in">
+ <a href="#"><h4>(  Sign In  )</h4></a>
+</div>     
+
+<div id="order-button">
+    <button><h4>Order Food</h4></button>
+
+</div>
+
+        <div id="search-icon">
+            <span id="search-span-icon">
+                <ion-icon class="searchbtn" name="search-outline"></ion-icon>
+                <ion-icon class="closehbtn" name="close-outline" ></ion-icon>
+            </span>
+        </div>
+
+
+    <div id="search-box">
+        <input type="text" placeholder="Try: Nutrition and allergens" name="" id="" >
+    </div>
+  </nav>
+
+
+</body>
+</html>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    let searchbtn = document.querySelector('.searchbtn');
+    let closebtn = document.querySelector('.closehbtn');
+    let searchbox = document.querySelector('#search-box');
+
+    searchbtn.onclick = function(){
+        searchbox.classList.add('active');
+        closebtn.classList.add('active');
+        searchbtn.classList.add('active')
+    }
+
+    closebtn.onclick = function(){
+        searchbox.classList.remove('active');
+        closebtn.classList.remove('active');
+        searchbtn.classList.remove('active');
+    }
+</script>
