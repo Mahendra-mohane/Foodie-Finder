@@ -61,7 +61,7 @@
         margin-top: 10px;
 
 }
-#main_div{
+.card-list{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
