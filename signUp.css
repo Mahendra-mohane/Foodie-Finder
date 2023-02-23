@@ -7,6 +7,7 @@
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   border-radius: 4%;
+  background-color: rgb(221, 41, 41);
 }
 h1 {
   margin: auto;
@@ -20,7 +21,7 @@ p {
 #userNumber,
 #userPassword,
 #name,
-#Lname,
+/* #Lname, */
 #confirmPassword {
   width: 98%;
   height: 1.4vw;
@@ -31,17 +32,20 @@ p {
   padding: 2%;
   border-radius: 1vw;
   font-weight: bold;
-  background-color: rgb(11, 93, 224);
+  background-color: rgb(15, 18, 216);
   color: white;
 }
 #submit:hover {
   cursor: pointer;
+  background-color: white;
+  color:  rgb(221, 41, 41);
+  font-size: 20px;
 }
 #moveForward {
   /* border: 1px solid red; */
   width: 25%;
   margin: auto;
-  margin-top: 3%;
+  margin-top: -2%;
   text-align: center;
   padding: 1%;
 }
@@ -52,4 +56,12 @@ p {
   border-radius: 1vw;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: rgb(15, 18, 216);
+    color: white;
+}
+#moveForward > a:hover {
+  cursor: pointer;
+  background-color: rgb(221, 41, 41);
+  color:white;
+  font-size: 20px;
 }

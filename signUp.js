@@ -16,7 +16,8 @@ function storeData() {
   var data = {
     email: document.querySelector("#userEmail").value,
     name: document.querySelector("#name").value,
-   Lastname: document.querySelector("#Lname").value,
+    
+  //  Lastname: document.querySelector("#Lname").value,
 
     number: document.querySelector("#userNumber").value,
 
@@ -30,7 +31,7 @@ function storeData() {
   localStorage.setItem("userData", JSON.stringify(usersData));
   document.querySelector("#userEmail").value = "";
   name: document.querySelector("#name").value="";
-  Lastname: document.querySelector("#Lname").value="";
+  // Lastname: document.querySelector("#Lname").value="";
   number: document.querySelector("#userNumber").value = "";
   password: document.querySelector("#userPassword").value ="";
   confirmPassword: document.querySelector("#confirmPassword").value="";
