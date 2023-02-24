@@ -7,11 +7,15 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+/* nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+  } */
 body{
-    
+    width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
+    border: 1px solid red;
 }
 
 nav{
@@ -46,12 +50,15 @@ nav{
     align-items: center;
     /* border: 2px solid; */
     justify-content: space-around;
+    
 }
 
 nav ul {
     position: relative;
     display: flex;
     gap: 30px;
+   
+    
 }
 
 nav ul li{
