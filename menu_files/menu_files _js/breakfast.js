@@ -1,7 +1,7 @@
 let main_file = document.getElementById('main_div')
 const savedData = JSON.parse(localStorage.getItem("site_data"));
 
-//qwertyusdfghjkxcvbnmrfghk
+
 function renderdata(data) {
     let cardlist = `
 <div class="card-list">
