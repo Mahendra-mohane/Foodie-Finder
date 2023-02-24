@@ -3,11 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-/* nav start here */
-
-
-
 #main-banner{
   width: 90%;
   height:100vh;
@@ -47,6 +42,7 @@ img{
 			padding: 0;
 			text-decoration: none;
       background-color: #dd0031;
+      border:none;
 
 }
 .button>button img{
@@ -463,8 +459,53 @@ img{
 }
 #container-six>div h2{
   margin-top: 20px;
-} 
+}
+
+#footer-page{
+  height: 20vh;
+  margin:auto;
+  display: flex;
+  justify-content: space-around;
+}
+#footer-page>div>ul{
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+#footer-page>div:last-child{
+  width: 35%;
+  height: 80px;
+  margin-top: 30px;
  
+}
+#footer-page>div:first-child{
+  /* width: 35%; */
+  height: 100px;
+  margin-top: 25px;
+}
+#footer-page>div:first-child >p{
+   margin-top:10px ;
+   font-size: 13px;
+}
+#footer-page>div>ul li a{
+  text-decoration: none;
+  list-style: none;
+  color: #dd0031;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: apercu,sans-serif;
+}
+#footer-page>div>ul li{
+  list-style: none
+}
+#footer-page>div:last-child>img{
+  width: 35px;
+  height: 35px;
+  
+}
+
+
+
 
 /* nav start here */
 
@@ -485,7 +526,7 @@ body{
 }
 
 nav{
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
@@ -497,6 +538,13 @@ nav{
     border: 1px solid;
     /* align-items: center; */
     text-align: center;
+
+
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
 }
 
 .logo{

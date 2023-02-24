@@ -164,8 +164,58 @@
    </div>
 
      <!-- fotter start here -->
+
+  <footer id="footer-page">
+      <div>
+        <ul >
+          <li>
+  <a href="/nutrition-allergens" title="Click here to view Chick-fil-A's Nutrition and Allergens information">Nutrition &amp; Allergens</a>        </li>
+          <li>
+  <a href="/customer-support">Customer Support</a>        </li>
+          <li>
+  <a href="/careers">Careers</a>        </li>
+          <li>
+  <a href="/franchising">Franchising</a>        </li>
+          <li>
+  <a href="https://shop.chick-fil-a.com/">Merchandise</a>        </li>
+          <li>
+  <a href="https://www.chick-fil-a.com/stories/press-room">Press Room</a>        </li>
+         </ul>
+    <p>Do business with us  Terms and Conditions of Use Privacy Policy  California Privacy   Notice Cookie and Internet-Based Advertising Policy</p>
+    <p>Do Not Sell Or Share My Personal Information Cookie Preference Center Accessibility Locations listing Legal</p>
+    <p>© 2022 CFA Properties, Inc. All rights reserved.</p>
+        </div>
+      <div>
+        <img src="./photos/icons8-facebook-circled-48.png"  alt="error">
+        <img src="./photos/icons8-instagram-48.png" alt="error">
+        <img src="./photos/icons8-linkedin-48.png" alt="error">
+        <img src="./photos/icons8-twitter-circled-48.png" alt="error">
+        <img src="./photos/icons8-youtube-logo-24.png" alt="">
+         
+      </div>
+  </footer>
      
 
 </body>
 </html>
 <script src="./scriptfile/index.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    let searchbtn = document.querySelector('.searchbtn');
+    let closebtn = document.querySelector('.closehbtn');
+    let searchbox = document.querySelector('#search-box');
+
+    searchbtn.onclick = function(){
+        searchbox.classList.add('active');
+        closebtn.classList.add('active');
+        searchbtn.classList.add('active')
+    }
+
+    closebtn.onclick = function(){
+        searchbox.classList.remove('active');
+        closebtn.classList.remove('active');
+        searchbtn.classList.remove('active');
+    }
+</script>
