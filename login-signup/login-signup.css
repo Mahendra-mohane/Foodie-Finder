@@ -5,14 +5,21 @@
     font-family: 'Poppins', sans-serif;
 } */
 
+
 #main-container{
     width: 55%;
     height: 450px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 200px;
     /* margin-bottom: 25px; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     /* padding: 20px ; */
+    border-radius: 15px;
+   
+  }
+  hr{
+    margin-top: 13px;
+    margin-bottom: 10px;
   }
   #container{
    display: flex;
@@ -36,7 +43,7 @@
     
   }
    #signup-logo>div h3{ 
-    margin-bottom: -1px;
+    margin-bottom: 15px;
     font-size: 16px;
   } 
   #signup-logo>div img{
@@ -48,17 +55,21 @@
      display: flex;
      justify-content: center;
      align-items: center;
+    
   
   }
   #form{
     width: 70%;
     margin: auto;
+    /* border: 3px solid black; */
+   
   }
   #form label{
     
-    margin-bottom: 20px;
     color: grey;
     font-size: 13px;
+    margin-top: 15px;
+  
   }
   #form>input{
     width: 80%;
@@ -111,6 +122,7 @@
 
   #signup-logo{
   font-size: 14px;
+  
  }
  /* form css ends here */
  /* login start here */
@@ -140,8 +152,8 @@
   opacity: 0;
 }
 .loginform{
-  width: 452px;
-  height: 309px;
+  width: 470px;
+  height: 360px;
   background-color: white;
   padding: 25px 40px 25px 40px ;
   position: absolute;
@@ -157,6 +169,7 @@
   margin-left: 63px;
   color: grey;
   font-size: 15px;
+  margin-top: 15px;
 }
 .loginform a{
   text-decoration: none;
@@ -173,7 +186,7 @@ form input{
 .loginform button{
   display: inline;
   text-align: center;
-  margin-left: 8em;
+  margin-left: 6.5em;
   font-size: 16px;
   color: white;
   margin-top: 12px;
@@ -217,6 +230,38 @@ form input{
 }
 /* navbar start here */
 
+
+#nav_links{
+  margin-top:69px;
+ 
+ height: 70px;
+ 
+ display: flex; 
+justify-content: center; 
+align-items: center; 
+box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+
+  
+position: fixed;
+top: 0;
+width: 100%;
+background-color: #fff; 
+ z-index: 10;
+}
+#nav_links a{
+  margin-left: 60px;
+  font-family: sans-serif;
+  font-weight: 550;
+  font-size: 18px;
+  line-height: 18px;
+  
+Color:
+
+#dd0031;
+text-align: center;
+text-decoration: none;
+}
+
 /* footer start here */
 
 #container-six{
@@ -226,7 +271,9 @@ form input{
   
 
 }
-
+#container-six img{
+    width: 100%;
+}
 #container-six div{
   width: 500px;
     font-weight: 400;
@@ -304,12 +351,15 @@ form input{
   font-weight: 600;
   font-family: apercu,sans-serif;
 }
-
+#footer-page>div>ul li{
+  list-style: none
+}
 #footer-page>div:last-child>img{
   width: 35px;
   height: 35px;
   
 }
+
 
 /* footer end here */
 

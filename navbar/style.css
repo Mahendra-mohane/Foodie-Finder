@@ -31,6 +31,12 @@ nav{
     /* border: 1px solid; */
     /* align-items: center; */
     text-align: center;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
 }
 
 .logo{
@@ -75,8 +81,8 @@ nav ul li a {
 }
 
 nav ul li a::before{
-    content: '';
-    position: absolute;
+    /* content: ''; */
+    /* position: absolute; */
     bottom: -2px;
     width: 50%;
     height: 2px;
@@ -84,6 +90,8 @@ nav ul li a::before{
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
     transform-origin: right;
+    
+
 }
 
 nav ul li a:hover:before {
