@@ -35,6 +35,8 @@ body{
     width: 400px;
     text-align: center;
     height: 500px;
+   
+    margin-left: 50px;
 }
 
 .title {
@@ -70,6 +72,7 @@ body{
 .card-list{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    
 }
 .title:hover{
 color: #d90431;

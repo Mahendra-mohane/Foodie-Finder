@@ -2,188 +2,192 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="./menu_files _js/breakfast.js"></script>
+  <script src="../data_base/data_base.js"></script>
 
 
-    <style>
-        @import url("breakfast.css");
-    </style>
-    <link rel="stylesheet" type="text/css" href="../navbar/style.css">
-    <link rel="stylesheet" type="text/css" href="dark-mode.css">
+
+  <style>
+    @import url("breakfast.css");
+    @import url("dark-mode.css");
+  </style>
+  <link rel="stylesheet" type="text/css" href="../navbar/style.css">
+
 </head>
 <nav>
-    <img class="logo" src="../navbar/logo.png" alt="">
+  <img class="logo" src="../navbar/logo.png" alt="">
 
-    <div id="nav-group">
-        <ul id="navigation">
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Stories</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-        </ul>
-
-    </div>
-
-    <div id="sign-in">
-        <a href="#">
-            <h4>( Sign In )</h4>
-        </a>
-    </div>
-
-    <div id="order-button">
-        <button>
-            <h4>Order Food</h4>
-        </button>
-
-    </div>
-
-    <div id="search-icon">
-        <span id="search-span-icon">
-            <ion-icon class="searchbtn" name="search-outline"></ion-icon>
-            <ion-icon class="closehbtn" name="close-outline"></ion-icon>
-        </span>
-    </div>
-
-
-    <div id="search-box">
-        <input type="text" placeholder="Try: Nutrition and allergens" name="" id="">
-    </div>
-    <body class="light-mode">
-    <label class="theme-switch" for="checkbox" style="margin-left: 100px;">
-        
-        <input type="checkbox" id="checkbox" />
-        <div class="slider round"></div>
+  <div id="nav-group">
+    <label class="theme-switch" for="dark-mode-toggle">
+      <input type="checkbox" id="dark-mode-toggle">
+      <div class="slider round" ></div>
     </label>
-</div>
+    <ul id="navigation">
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Stories</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Careers</a></li>
+    </ul>
+
+  </div>
+
+  <div id="sign-in">
+    <a href="#">
+      <h4>( Sign In )</h4>
+    </a>
+  </div>
+
+  <div id="order-button">
+    <button>
+      <h4>Order Food</h4>
+    </button>
+
+  </div>
+
+  <div id="search-icon">
+    <span id="search-span-icon">
+      <ion-icon class="searchbtn" name="search-outline"></ion-icon>
+      <ion-icon class="closehbtn" name="close-outline"></ion-icon>
+    </span>
+  </div>
+
+
+  <div id="search-box">
+    <input type="text" placeholder="Try: Nutrition and allergens" name="" id="">
+  </div>
+
+
+ 
 </nav>
 <div id="nav_links">
-    <a href="breakfast.html">Breakfast</a>
-    <a href="entrees.html">Entrées</a>
-    <a href="salads.html">Salads</a>
-    <a href="sides.html">Sides</a>
-    <a href="">Kid's Meals</a>
-    <a href="treats.html">Treats</a>
-    <a href="drinks.html">Drinks</a>
-    <a href="drppings.html">Dipping Sauces and Dressings</a>
-    <a href="" id="Catering">Catering</a>
+  <a href="breakfast.html">Breakfast</a>
+  <a href="entrees.html">Entrées</a>
+  <a href="salads.html">Salads</a>
+  <a href="sides.html">Sides</a>
+  <a href="">Kid's Meals</a>
+  <a href="treats.html">Treats</a>
+  <a href="drinks.html">Drinks</a>
+  <a href="drppings.html">Dipping Sauces and Dressings</a>
+  <a href="" id="Catering">Catering</a>
 </div>
 
-</body>
 
 
-</body>
+
+
 
 </html>
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script>
-    let searchbtn = document.querySelector('.searchbtn');
-    let closebtn = document.querySelector('.closehbtn');
-    let searchbox = document.querySelector('#search-box');
+  let searchbtn = document.querySelector('.searchbtn');
+  let closebtn = document.querySelector('.closehbtn');
+  let searchbox = document.querySelector('#search-box');
 
-    searchbtn.onclick = function () {
-        searchbox.classList.add('active');
-        closebtn.classList.add('active');
-        searchbtn.classList.add('active')
-    }
+  searchbtn.onclick = function () {
+    searchbox.classList.add('active');
+    closebtn.classList.add('active');
+    searchbtn.classList.add('active')
+  }
 
-    closebtn.onclick = function () {
-        searchbox.classList.remove('active');
-        closebtn.classList.remove('active');
-        searchbtn.classList.remove('active');
-    }
+  closebtn.onclick = function () {
+    searchbox.classList.remove('active');
+    closebtn.classList.remove('active');
+    searchbtn.classList.remove('active');
+  }
 </script>
 
 <body>
 
-    <div id="title_div">
-        <h1 id="title_menu">Chick-fil-A<span id="trademark">&reg;</span> Menu</h1>
-        <p id="title_p">Availability may differ at different locations.</p>
-    </div>
+  <div id="title_div">
+    <h1 id="title_menu">Chick-fil-A<span id="trademark">&reg;</span> Menu</h1>
+    <p id="title_p">Availability may differ at different locations.</p>
+  </div>
 
+  <div>
+    <div id="main_div">
+      abcd
+    </div>
+  </div>
+  <div id="container-six">
+
+    <img src="https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Footer%20Images/footer-burger-phone-desktop-new-3.jpg"
+      alt="error">
     <div>
-        <div id="main_div">
+      <img src="https://www.chick-fil-a.com/-/media/images/cfacom/cfa-one/cfa_one_red_pms.ashx?h=99&w=316&la=en"
+        style="width: 200px;" alt="error">
+      <h2 class="tagline">Join Chick-fil-A One<sup>®</sup>. Earn points with every qualifying purchase. Redeem available
+        rewards of your choice.</h2>
+      <span>The <span class="nowrap">Chick-fil-A</span>&nbsp;App is not presently accepted at <span
+          class="nowrap">Chick-fil-A</span> Express™ and <span class="nowrap">Chick-fil-A</span> licensed locations such
+        as those in airports and college campuses. These locations are operated by professional third-party food
+        contractors and their operating systems do not currently offer guests the ability to earn points or redeem
+        rewards through the <span class="nowrap">Chick-fil-A App.</span></span>
+      <a href="https://itunes.apple.com/us/app/chick-fil-a/id488818252" class="apple cfa-one-app-goal"
+        rel="noopener noreferrer" target="_blank" title="Download on the App Store">Download on the App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=com.chickfila.cfaflagship" class="google cfa-one-app-goal"
+        rel="noopener noreferrer" target="_blank">Get it on Google Play</a>
+      <a href="#" class="btn--vis" title="Learn more about the Chick-fil-A One program">Learn more</a>
+      <!-- <p>Already have an account? </p><span>Sign-in</span> -->
 
-        </div>
     </div>
-    <div id="container-six">
+  </div>
 
-        <img src="https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Footer%20Images/footer-burger-phone-desktop-new-3.jpg"
-          alt="error">
-        <div>
-          <img src="https://www.chick-fil-a.com/-/media/images/cfacom/cfa-one/cfa_one_red_pms.ashx?h=99&w=316&la=en"
-            style="width: 200px;" alt="error">
-          <h2 class="tagline">Join Chick-fil-A One<sup>®</sup>. Earn points with every qualifying purchase. Redeem available
-            rewards of your choice.</h2>
-          <span>The <span class="nowrap">Chick-fil-A</span>&nbsp;App is not presently accepted at <span
-              class="nowrap">Chick-fil-A</span> Express™ and <span class="nowrap">Chick-fil-A</span> licensed locations such
-            as those in airports and college campuses. These locations are operated by professional third-party food
-            contractors and their operating systems do not currently offer guests the ability to earn points or redeem
-            rewards through the <span class="nowrap">Chick-fil-A App.</span></span>
-          <a href="https://itunes.apple.com/us/app/chick-fil-a/id488818252" class="apple cfa-one-app-goal"
-            rel="noopener noreferrer" target="_blank" title="Download on the App Store">Download on the App Store</a>
-          <a href="https://play.google.com/store/apps/details?id=com.chickfila.cfaflagship" class="google cfa-one-app-goal"
-            rel="noopener noreferrer" target="_blank">Get it on Google Play</a>
-          <a href="#" class="btn--vis" title="Learn more about the Chick-fil-A One program">Learn more</a>
-          <!-- <p>Already have an account? </p><span>Sign-in</span> -->
-    
-        </div>
-      </div>
-    
-      <!-- fotter start here -->
-    
-      <footer id="footer-page">
-        <div>
-          <ul>
-            <li>
-              <a href="/nutrition-allergens"
-                title="Click here to view Chick-fil-A's Nutrition and Allergens information">Nutrition &amp; Allergens</a>
-            </li>
-            <li>
-              <a href="/customer-support">Customer Support</a>
-            </li>
-            <li>
-              <a href="/careers">Careers</a>
-            </li>
-            <li>
-              <a href="/franchising">Franchising</a>
-            </li>
-            <li>
-              <a href="https://shop.chick-fil-a.com/">Merchandise</a>
-            </li>
-            <li>
-              <a href="https://www.chick-fil-a.com/stories/press-room">Press Room</a>
-            </li>
-          </ul>
-          <p>Do business with us Terms and Conditions of Use Privacy Policy California Privacy Notice Cookie and
-            Internet-Based Advertising Policy</p>
-          <p>Do Not Sell Or Share My Personal Information Cookie Preference Center Accessibility Locations listing Legal</p>
-          <p>© 2022 CFA Properties, Inc. All rights reserved.</p>
-        </div>
-        <div>
-          <img src="https://s.yimg.com/fz/api/res/1.2/SBnTtvtkyJXCCDtTnKcQUw--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/c165dc31-f7f7-35c4-8df4-cdd842798724/t_500x300">
-          <img src="https://tse1.mm.bing.net/th?id=OIP.XgT9d552B6R9C60Ul2yqkAHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121" alt="error">
-          <img src="https://tse1.mm.bing.net/th?id=OIP.6uTQ7mOjYOD2sNKxUdnaNAHaHa&pid=Api&rs=1&c=1&qlt=95&w=115&h=115" alt="error">
-          <img src="https://tse1.mm.bing.net/th?id=OIP.P3GJZi8Z-DGPx1JS3u5yOgHaGl&pid=Api&rs=1&c=1&qlt=95&w=127&h=113" alt="error">
-          <img src="https://tse2.mm.bing.net/th?id=OIP.lbjyc_2B3Xv8rKC-6GgzRwHaEK&pid=Api&P=0" alt="">
-    
-        </div>
-      </footer>
+  <!-- fotter start here -->
 
+  <footer id="footer-page">
+    <div>
+      <ul>
+        <li>
+          <a href="/nutrition-allergens"
+            title="Click here to view Chick-fil-A's Nutrition and Allergens information">Nutrition &amp; Allergens</a>
+        </li>
+        <li>
+          <a href="/customer-support">Customer Support</a>
+        </li>
+        <li>
+          <a href="/careers">Careers</a>
+        </li>
+        <li>
+          <a href="/franchising">Franchising</a>
+        </li>
+        <li>
+          <a href="https://shop.chick-fil-a.com/">Merchandise</a>
+        </li>
+        <li>
+          <a href="https://www.chick-fil-a.com/stories/press-room">Press Room</a>
+        </li>
+      </ul>
+      <p>Do business with us Terms and Conditions of Use Privacy Policy California Privacy Notice Cookie and
+        Internet-Based Advertising Policy</p>
+      <p>Do Not Sell Or Share My Personal Information Cookie Preference Center Accessibility Locations listing Legal</p>
+      <p>© 2022 CFA Properties, Inc. All rights reserved.</p>
+    </div>
+    <div>
+      <img
+        src="https://s.yimg.com/fz/api/res/1.2/SBnTtvtkyJXCCDtTnKcQUw--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/c165dc31-f7f7-35c4-8df4-cdd842798724/t_500x300">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.XgT9d552B6R9C60Ul2yqkAHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
+        alt="error">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.6uTQ7mOjYOD2sNKxUdnaNAHaHa&pid=Api&rs=1&c=1&qlt=95&w=115&h=115"
+        alt="error">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.P3GJZi8Z-DGPx1JS3u5yOgHaGl&pid=Api&rs=1&c=1&qlt=95&w=127&h=113"
+        alt="error">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.lbjyc_2B3Xv8rKC-6GgzRwHaEK&pid=Api&P=0" alt="">
+
+    </div>
+  </footer>
 
 
 
 </body>
 
+
 </html>
 
-<script src="../data_base/data_base.js"></script>
-<script src="./menu_files _js/breakfast.js"></script>
 
-<script src="dark_mode.js">
-
-</script>
-
+<script src="dark_mode.js"></script>
