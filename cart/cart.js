@@ -1,3 +1,18 @@
+let searchbtn = document.querySelector('.searchbtn');
+    let closebtn = document.querySelector('.closehbtn');
+    let searchbox = document.querySelector('#search-box');
+
+    searchbtn.onclick = function(){
+        searchbox.classList.add('active');
+        closebtn.classList.add('active');
+        searchbtn.classList.add('active')
+    }
+
+    closebtn.onclick = function(){
+        searchbox.classList.remove('active');
+        closebtn.classList.remove('active');
+        searchbtn.classList.remove('active');
+    }
 
 
 let card_product = JSON.parse(localStorage.getItem('cardData'))
@@ -63,7 +78,7 @@ function displayData(data){
         decrenent.innerHTML = "--"
         let counts = 2;
 
-        remove.innerHTML = '<img src="https://o.remove.bg/downloads/cbec77d2-3471-420a-baff-00251ee09906/images-removebg-preview.png" alt="">'
+        remove.innerHTML = '<img src="delete.png" alt="">'
 
         remove.addEventListener('click', () => {
             deletedtat(card_product, index);
