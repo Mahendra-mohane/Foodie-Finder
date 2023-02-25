@@ -16,8 +16,8 @@
             let reData = data.meals.map(item => {
                 return {
 
-                    name: item.strMeal,
-                    img: item.strMealThumb
+                    title: item.strMeal,
+                    image: item.strMealThumb
                 }
             })
             // console.log(reData)
@@ -48,8 +48,8 @@
                    let reData = data.meals.map(item => {
                        return {
        
-                           name: item.strMeal,
-                           img: item.strMealThumb
+                           title: item.strMeal,
+                           image: item.strMealThumb
                        }
                    })
                    // console.log(reData)
@@ -65,7 +65,7 @@
        
            function displayData(reData) {
                
-               let cardlist = `<div class = "card-list">${reData.map(item => getCard(item.name, item.img)).join(" ")}</div>`
+               let cardlist = `<div class = "card-list">${reData.map(item => getCard(item.title, item.image)).join(" ")}</div>`
               let cart = document.querySelector("#addtocartBtn");
        
                mainSection.innerHTML = cardlist;
@@ -81,8 +81,8 @@
                       // console.log(b[i].textContent)
        
                       let obj = {
-                       name : b[i].textContent,
-                       img : c[i].src,
+                       title : b[i].textContent,
+                       image : c[i].src,
                        price : d[i].textContent
                       }
                       cardData = JSON.parse(localStorage.getItem("cardData"))||[];
@@ -142,17 +142,17 @@
        
            }   
 
-    function getCard(name, img) {
+    function getCard(title, image) {
         let card = `
     
     <div class = "card">
     <div class = "card-img"> 
-    <img class="images" src = ${img}  alt= "123" />
+    <img class="images" src = ${image}  alt= "123" />
 
     </div>
    
     <div class = "card-body">
-       <h2 class="card-item">${name} </h2>
+       <h2 class="card-item">${title} </h2>
        <p  class="card-price"> ${Math.floor(Math.random() * 500)}</p>
        <button id="addtocardBtn" class="addBtn">Add to Cart</button >
       

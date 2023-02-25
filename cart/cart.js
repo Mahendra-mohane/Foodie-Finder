@@ -59,8 +59,8 @@ function displayData(data){
 
          remove.setAttribute('id','remove')
 
-        image.src = el.img;
-        title.textContent = el.name
+        image.src = el.image;
+        title.textContent = el.title
         price.textContent = "₹" + el.price
         title2.textContent = `A classic macaroni and cheese recipe featuring a special blend of cheeses including Parmesan, Cheddar, and Romano. Baked in-restaurant to form a crispy top layer of baked cheese.`
 
