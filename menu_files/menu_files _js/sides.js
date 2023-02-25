@@ -1,8 +1,8 @@
-let main_file = document.getElementById('main_div')
 const savedData = JSON.parse(localStorage.getItem("site_data"));
 
 
-function renderdata(data) {
+ function renderdata(data) {
+ 
     let cardlist = `
 <div class="card-list">
 ${data
@@ -14,15 +14,22 @@ ${data
                 )
             )
             .join('')}
-
-
 </div>
 `;
+
+    let main_file = document.getElementById('main_div')
+    
     main_file.innerHTML = null
     main_file.innerHTML = cardlist
+
+
 }
-console.log(savedData.sides)
-renderdata(savedData.sides)
+setTimeout(() => {
+    renderdata(savedData.sides
+        )
+}, 100);
+
+
 function getcard(image, title, desc) {
     let card = `
     <div class="child_div1">
@@ -35,11 +42,13 @@ function getcard(image, title, desc) {
            
     return card
 }
+let arr=[]
  function cardlistt(title,image){
 let obj={
     image:image,
     title:title
 }
-console.log(obj)
-localStorage.setItem("cardData", JSON.stringify(obj));
+
+  arr.push(obj)
+  localStorage.setItem('cardData', JSON.stringify(arr))
 }
