@@ -188,3 +188,111 @@ text-decoration: none;
         width: 100%;
     }
 }
+
+    #container-six {
+      height: 70vh;
+      margin: auto;
+      margin-top: 70px;
+
+
+    }
+
+    #container-six img {
+      width: 100%;
+    }
+
+    #container-six div {
+      width: 500px;
+      font-weight: 400;
+      max-height: 500px;
+      margin: auto;
+      position: absolute;
+      text-align: center;
+      font-size: 1.0rem;
+      color: #485259;
+      font-family: apercu, sans-serif;
+      position: relative;
+      bottom: 430px;
+      left: 350px;
+    }
+
+    #container-six div a:last-child {
+      box-shadow: 0 2px 6px 0 rgb(0 0 0 / 15%);
+      background: #fff;
+      color: white;
+      display: inline-block;
+      width: auto;
+      border-radius: 24px;
+      cursor: pointer;
+      font-variant-ligatures: none;
+      transition: all .5s ease-in-out;
+      padding: 15px 19px;
+      line-height: 1;
+      font-weight: 600;
+      font-family: apercu, sans-serif;
+      letter-spacing: -.5px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      margin: auto;
+      background-color: #dd0031;
+      margin-top: 30px;
+
+    }
+
+    #container-six>div h2 {
+      margin-top: 20px;
+    }
+
+    #footer-page {
+      height: 20vh;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    #footer-page>div>ul {
+      display: flex;
+      justify-content: space-around;
+      gap: 40px;
+    }
+
+    #footer-page>div:last-child {
+      width: 35%;
+      height: 80px;
+      margin-top: 30px;
+
+    }
+
+    #footer-page>div:first-child {
+      /* width: 35%; */
+      height: 100px;
+      margin-top: 25px;
+    }
+
+    #footer-page>div:first-child>p {
+      margin-top: 5px;
+      font-size: 13px;
+      margin-left: 35px;
+    }
+
+    #footer-page>div>ul li a {
+      text-decoration: none;
+      list-style: none;
+      color: #dd0031;
+      cursor: pointer;
+      font-weight: 600;
+      font-family: apercu, sans-serif;
+    }
+
+    #footer-page>div>ul li {
+      list-style: none
+    }
+
+    #footer-page>div:last-child>img {
+      width: 35px;
+      height: 35px;
+
+    }
+  

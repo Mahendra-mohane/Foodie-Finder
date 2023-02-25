@@ -21,8 +21,10 @@ ${data
     main_file.innerHTML = null
     main_file.innerHTML = cardlist
 }
-console.log(savedData.breakfast)
-renderdata(savedData.breakfast)
+console.log(savedData.entrees
+    )
+renderdata(savedData.entrees
+    )
 function getcard(image, title, desc) {
     let card = `
     <div class="child_div1">
@@ -41,5 +43,5 @@ let obj={
     title:title
 }
 console.log(obj)
-localStorage.setItem("view_product_data", JSON.stringify(obj));
+localStorage.setItem("cardData", JSON.stringify(obj));
 }
