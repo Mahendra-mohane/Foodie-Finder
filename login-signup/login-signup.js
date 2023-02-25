@@ -188,7 +188,7 @@ form_login.addEventListener("submit", (event)=>{
 
         
           alert("Login Successful")
-          window.location.href="./index.html"
+          window.location.href="../navbar/index.html"
       }
       else
       {
