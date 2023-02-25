@@ -226,9 +226,7 @@ form input{
   
 
 }
-#container-six img{
-    width: 100%;
-}
+
 #container-six div{
   width: 500px;
     font-weight: 400;
@@ -306,9 +304,7 @@ form input{
   font-weight: 600;
   font-family: apercu,sans-serif;
 }
-#footer-page>div>ul li{
-  list-style: none
-}
+
 #footer-page>div:last-child>img{
   width: 35px;
   height: 35px;
