@@ -232,7 +232,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 35px;
     background: #fff;
     padding: 20px 40px;
     display: flex;
@@ -376,6 +376,8 @@ nav #search-icon{
 #sign-in a {
     text-decoration: none;
     color: red;
+    position: relative;
+    bottom: 18px;
 }
 
 #order-button{
