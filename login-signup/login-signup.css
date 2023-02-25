@@ -1,0 +1,410 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} */
+
+#main-container{
+    width: 55%;
+    height: 75vh;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* padding: 20px ; */
+  }
+  #container{
+   display: flex;
+   
+  }
+  #signup-logo{
+     width:30%;
+     display: grid;
+     grid-template-rows: repeat(3,1fr); 
+     gap: 5px;
+     background-color: #fbfbfb;
+     
+  }
+  #signup-logo>div{
+    height: 24vh;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: grey;
+    background-color:#fbfbfb;
+    
+  }
+   #signup-logo>div h3{ 
+    margin-bottom: -5px;
+    font-size: 16px;
+  } 
+  #signup-logo>div img{
+    margin-bottom: -10px;
+    background-color:  #fbfbfb;
+  }
+  #signup-from{
+    width: 70%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  
+  }
+  #form{
+    width: 70%;
+    margin: auto;
+  }
+  #form label{
+    
+    margin-bottom: 20px;
+    color: grey;
+    font-size: 13px;
+  }
+  #form>input{
+    width: 80%;
+     
+    outline:none;
+    border: none;
+    border-style: none; 
+   font-weight:bold;
+   font-size: 12px;
+   color: grey;
+   font-weight: 200;
+  }
+  #form button{
+    width: 100%;
+    height:45px;
+    margin-top: 20px;
+    background-color:#cc062b;
+    border: none;
+    font-size: 17px;
+    color:white;
+    font-weight: bolder;
+    border-radius: 15px;
+    transition: width 2s;
+    
+
+  }
+  #form button:hover{
+    height: 46px;
+    cursor: pointer;
+  }
+  #form h4{
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: grey;
+    font-weight:400;
+  }
+  #form a{
+    
+    text-decoration: none;
+    color:#cc062b ;
+    cursor: pointer;
+    padding: 10px 15px 10px 15px;
+
+  }
+  #form label{
+   margin-bottom: 15px;
+  }
+
+  #signup-logo{
+  font-size: 14px;
+ }
+ /* form css ends here */
+ /* login start here */
+
+ .btn-login{
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.overlay{
+  width: 100%;
+  position: fixed;
+  top:0%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  z-index: -1;
+  transition: 1s;
+}
+.showoverlay{
+  opacity: 1;
+  z-index: 1;
+}
+.closeoverlay{
+  z-index: -1;
+  opacity: 0;
+}
+.loginform{
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  padding: 25px 40px 25px 40px ;
+  position: absolute;
+  transition: 1s;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%,-50%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 9;
+
+}
+.loginform h4{
+  color: grey;
+  font-size: 15px;
+}
+.loginform a{
+  text-decoration: none;
+  color:#cc062b ;
+  font-size: 13px;
+}
+form input{
+  outline: none;
+  border: none;
+}
+.login-line{
+  margin-top: -15px;
+}
+.loginform button{
+  display: inline;
+  text-align: center;
+  margin-left: 15em;
+  font-size: 16px;
+  color: white;
+  margin-top: 12px;
+  width: 10em;
+  border-radius: 15px;
+  background-color: #cc062b;
+  padding: 15px;
+  border: none;
+}
+.showloginform{
+ top:50% ;
+}
+.closeloginform{
+  top: -50px;
+  z-index: 0;
+  transition: 3s;
+}
+.loginform input{
+  width: 100%;
+  height: 35px;
+  margin-bottom: 15px;
+}
+/* .loginform  button{
+  font-size: 20px;
+} */
+
+.loginform span{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  background-color:#cc062b;
+  text-align:center;
+  line-height: 30px;
+  color: white;
+  cursor: pointer;
+
+}
+/* navbar start here */
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,700;1,600;1,700&family=Nanum+Gothic:wght@400;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Oxygen:wght@700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} */
+
+body{
+    
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    padding: 20px 40px;
+    display: flex;
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2);
+    /* border: 1px solid; */
+    /* align-items: center; */
+    text-align: center;
+}
+
+.logo{
+   width: 150px;
+   height: 50px;
+   margin-top: -11px;
+}
+
+#navigation{
+    /* border: 1px solid red; */
+    margin-left: 420px;
+    /* justify-content: space-evenly; */
+}
+
+#nav-group{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid; */
+    justify-content: space-around;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 50%;
+    height: 2px;
+    background: #333;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(2);
+    transform-origin: left;
+}
+
+nav #search-icon{
+    display: flex;
+    font-size: 1.9em;
+    z-index: 10;
+    cursor: pointer;
+    margin-left: 350px;
+
+}
+
+#search-box{
+    position: absolute;
+    /* left: 0; */
+    right: -100%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background: #fff;
+    align-items: center;
+    padding: 0 30px;
+    transform: 0.5s ease-in-out;
+    margin-top: -11px;
+}
+
+#search-box.active{
+    right: 0;
+    
+}
+
+#search-box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 60px;
+    color: #333;
+    font-size: 1.25em;
+    background: #fff;
+    /* margin-top: -5px; */
+    /* box-shadow: ; */
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+.searchbtn.active {
+    left: 0;
+}
+
+
+
+.searchbtn{
+    position: relative;
+    left: 100px;
+    /* top: 2.5px; */
+    transition: 0.5s ease-in-out;
+}
+
+.closehbtn.active{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    scale: 1;
+}
+
+.closehbtn{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    scale: 0;
+}
+
+#sign-in{
+    display: flex;
+    /* border: 1px solid; */
+    margin-left: 1080px;
+    position: absolute;
+    margin-top: 4px;
+}
+
+#sign-in a {
+    text-decoration: none;
+    color: red;
+}
+
+#order-button{
+    position: absolute;
+    /* border: 2px solid red; */
+    margin-left: 1200px;
+    width: 130px;
+    height: 50px;
+    margin-top: -15px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgb(223, 24, 24);
+    cursor: pointer;
+    margin-top: -12px;
+}
+
+#order-button h4{
+    font-size: 20px;
+    margin-top: 13px;
+    color: white;
+    cursor: pointer;
+}
+#order-button button{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#order-button:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
