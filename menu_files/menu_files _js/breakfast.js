@@ -9,7 +9,7 @@ const savedData = JSON.parse(localStorage.getItem("site_data"));
         price: Math.floor(Math.random() * 500)
     }
  })
-//  console.log(newdata)
+
     let cardlist = `
 <div class="card-list">
 ${newdata
