@@ -32,6 +32,7 @@ ${newdata
 
 
 }
+// here the all works happening in js file
 setTimeout(() => {
     renderdata(savedData.drppings
         )
