@@ -104,11 +104,18 @@
                        alert("Already in cart");
                        return;
                       }
-                      console.log(obj.name)
+                  
+                      
+
+                        console.log(obj.name)
                       alert("Added to Cart")
                       cardData.push(obj)
                       console.log("cardData before setting-",cardData)
                        localStorage.setItem('cardData', JSON.stringify(cardData));
+
+                       window.location.reload()
+                   
+                      
        
                       //BELOW THIS OUR CODE
        
