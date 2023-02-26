@@ -34,7 +34,7 @@ ${newdata
 }
 setTimeout(() => {
     renderdata(savedData.salad)
-}, 100);
+}, 1000);
 
 
 function getcard(image, title, desc,price) {
@@ -50,13 +50,29 @@ function getcard(image, title, desc,price) {
     return card
 }
 let arr=[]
- function cardlistt(title,image,price){
-let obj={
-    image:image,
-    title:title,
-    price:price
-}
-
-  arr.push(obj)
-  localStorage.setItem('cardData', JSON.stringify(arr))
-}
+function cardlistt(title, image, price) {
+    
+    let existingData = JSON.parse(localStorage.getItem('cardData')) || [];
+  
+    
+    let itemExists = existingData.some((item) => item.title === title);
+  
+    if (itemExists) {
+     
+      alert(`item is already in cart. Please make changes if needed.`);
+    } else {
+      
+      let newData = {
+        image: image,
+        title: title,
+        price: price
+      };
+      existingData.push(newData);
+  
+      
+      localStorage.setItem('cardData', JSON.stringify(existingData));
+  
+      
+      alert(`item added to cart!`);
+    }
+  }

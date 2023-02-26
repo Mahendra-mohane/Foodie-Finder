@@ -42,6 +42,7 @@ function displayData(data){
         let title2 = document.createElement('p')
         let title3 = document.createElement('h5')
         let button1 = document.createElement('button')
+          
         let button2 = document.createElement('button')
         let increment = document.createElement('button')
         let count = document.createElement('h3')
@@ -115,3 +116,10 @@ function deletedtat(data, index){
     localStorage.setItem("cardData", JSON.stringify(card_product));
     displayData(card_product)
   }
+
+  let buttonclick=document.querySelector('#button1')
+
+  buttonclick.addEventListener('click',()=>{
+     
+       window.open('../checkout.html')
+  })
