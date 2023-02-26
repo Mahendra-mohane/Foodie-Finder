@@ -70,85 +70,162 @@
             text-align: center;
             color: #ff4500;
         }
-        /* nav */
-        * {
-            margin: 0%;
-            padding: 0px;
-            position: sticky;
-        }
+       
+        /* footer CSS */
+        #container-six{
+  height: 70vh;
+  margin:auto;
+  margin-top: 70px;
+  
 
-        #nav {
-            width: 100%;
-            height: 76px;
-            border: 3px solid black;
-            margin: auto;
-            padding: 10px 0px;
-            padding-top: 20px;
-            margin-top: 69px;
-            display: flex;
-            justify-content: space-evenly;
-            background-color: #00008B;
-            border: none;
-            position: -webkit-sticky;
+}
+#container-six img{
+    width: 100%;
+}
+#container-six div{
+  width: 500px;
+    font-weight: 400;
+    max-height: 500px;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    font-size: 1.0rem;
+    color: #485259;
+    font-family: apercu,sans-serif;
+    position: relative;
+    bottom: 430px;
+    left: 350px;
+}
+#container-six div a:last-child{
+  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 15%);
+  background: #fff;
+  color:white;
+  display: inline-block;
+  width: auto;
+  border-radius: 24px;
+  cursor: pointer;
+  font-variant-ligatures: none;
+  transition: all .5s ease-in-out;
+  padding: 15px 19px;
+  line-height: 1;
+  font-weight: 600;
+  font-family: apercu,sans-serif;
+  letter-spacing: -.5px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  background-color:#dd0031 ;
+  margin-top: 30px;
+  
+}
+#container-six>div h2{
+  margin-top: 20px;
+}     
 
-
-        }
-
-        #nav>div a {
-            text-decoration: none;
-            color: white;
-            font-size: 22px;
-            padding-top: 100px;
-
-        }
-
-        #nav>div a::after {
-            content: " ";
-            width: 0;
-            height: 3px;
-            background-color: white;
-            display: block;
-            margin: auto;
-        }
-
-        #nav>div a:hover::after {
-            width: 100%;
-            transition: width 0.1s linear;
-        }
-
-        #nav>div a:hover {
-            color: whitesmoke;
-        }
-
-        #nav>div a {
-            font-size: 20px;
-            font-style: italic;
-        }
+#footer-page{
+  height: 20vh;
+  margin:auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+#footer-page>div>ul{
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+#footer-page>div:last-child{
+  width: 35%;
+  height: 80px;
+  margin-top: 30px;
+ 
+}
+#footer-page>div:first-child{
+  /* width: 35%; */
+  height: 100px;
+  margin-top: 25px;
+}
+#footer-page>div:first-child >p{
+   margin-top:5px ;
+   font-size: 13px;
+   margin-left: 35px;
+}
+#footer-page>div>ul li a{
+  text-decoration: none;
+  list-style: none;
+  color: #dd0031;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: apercu,sans-serif;
+}
+#footer-page>div>ul li{
+  list-style: none
+}
+#footer-page>div:last-child>img{
+  width: 35px;
+  height: 35px;
+  
+}
 
     </style>
 </head>
 
 <body>
 
-    <div id="nav">
-        <div><a href="./food.html">ALL</a></div>
-        <div><a href="BREAKFAST.html">BREAKFAST</a></div>
-        <div><a href="ENTREES.html">ENTREES</a></div>
-        <div><a href="SALADS.html">SALADS</a></div>
-        <div><a href="SIDES.html">SIDES</a></div>
-        <div><a href="DRINKS.html">DRINKS</a></div>
-        <div><a href="Treats.html">Treats</a></div>
-       
-        </div>
+   
     <h1 id="food">Your Favorite Food</h1>
     <div id="container">
 
     </div>
  
-    <!-- footer end -->
+   <!-- footer start here -->
+   <div id="container-six">
+    
+    <img src="https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Footer%20Images/footer-burger-phone-desktop-new-3.jpg" alt="error">
+   <div>
+      <img src="https://www.chick-fil-a.com/-/media/images/cfacom/cfa-one/cfa_one_red_pms.ashx?h=99&w=316&la=en" style="width: 200px;" alt="error">
+      <h2 class="tagline">Join Chick-fil-A One<sup>®</sup>. Earn points with every qualifying purchase. Redeem available rewards of your choice.</h2>
+      <span>The <span class="nowrap">Chick-fil-A</span>&nbsp;App is not presently accepted at <span class="nowrap">Chick-fil-A</span> Express™ and <span class="nowrap">Chick-fil-A</span> licensed locations such as those in airports and college campuses. These locations are operated by professional third-party food contractors and their operating systems do not currently offer guests the ability to earn points or redeem rewards through the <span class="nowrap">Chick-fil-A App.</span></span>
+      <a href="https://itunes.apple.com/us/app/chick-fil-a/id488818252" class="apple cfa-one-app-goal" rel="noopener noreferrer" target="_blank" title="Download on the App Store">Download on the App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=com.chickfila.cfaflagship" class="google cfa-one-app-goal" rel="noopener noreferrer" target="_blank">Get it on Google Play</a>
+      <a href="#" class="btn--vis" title="Learn more about the Chick-fil-A One program">Learn more</a>
+      <!-- <p>Already have an account? </p><span>Sign-in</span> -->
+
+   </div>
+ </div>
+   <footer id="footer-page">
+    <div>
+      <ul >
+        <li>
+<a href="/nutrition-allergens" title="Click here to view Chick-fil-A's Nutrition and Allergens information">Nutrition &amp; Allergens</a>        </li>
+        <li>
+<a href="/customer-support">Customer Support</a>        </li>
+        <li>
+<a href="/careers">Careers</a>        </li>
+        <li>
+<a href="/franchising">Franchising</a>        </li>
+        <li>
+<a href="https://shop.chick-fil-a.com/">Merchandise</a>        </li>
+        <li>
+<a href="https://www.chick-fil-a.com/stories/press-room">Press Room</a>        </li>
+       </ul>
+  <p>Do business with us  Terms and Conditions of Use Privacy Policy  California Privacy   Notice Cookie and Internet-Based Advertising Policy</p>
+  <p>Do Not Sell Or Share My Personal Information Cookie Preference Center Accessibility Locations listing Legal</p>
+  <p>© 2022 CFA Properties, Inc. All rights reserved.</p>
+      </div>
+    <div>
+      <img src="./photos/icons8-facebook-circled-48.png"  alt="error">
+      <img src="./photos/icons8-instagram-48.png" alt="error">
+      <img src="./photos/icons8-linkedin-48.png" alt="error">
+      <img src="./photos/icons8-twitter-circled-48.png" alt="error">
+      <img src="./photos/icons8-youtube-logo-24.png" alt="">
+       
+    </div>
+</footer>
     
 </body>
-<!-- footer start -->
+
 
 </html>
 <script src="./food.js">
